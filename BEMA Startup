@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEMA Startup - Institut de Formation en Ligne</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .course {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .course img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BEMA Startup</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#courses">Nos Formations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>À Propos de BEMA Startup</h2>
+        <p>BEMA Startup est un institut de formation en ligne spécialisé dans les programmes universitaires en systèmes LMD (Licence-Master-Doctorat) ainsi que dans les cours de renforcement pour les élèves préparant le baccalauréat.</p>
+    </section>
+
+    <section id="courses">
+        <h2>Nos Formations</h2>
+        <p>Découvrez nos cours en ligne et inscrivez-vous dès aujourd'hui !</p>
+        <!-- Ajoutez vos formations ici -->
+        <div class="course">
+            <img src="cours_lmd.jpg" alt="Cours LMD">
+            <h3>Formation en Systèmes LMD</h3>
+            <p>Formation complète pour les programmes universitaires en systèmes LMD.</p>
+            <a href="#">S'inscrire</a>
+        </div>
+        <div class="course">
+            <img src="cours_bac.jpg" alt="Cours de Renforcement pour le Baccalauréat">
+            <h3>Cours de Renforcement pour le Baccalauréat</h3>
+            <p>Cours spécialement conçus pour aider les élèves à réussir le baccalauréat.</p>
+            <a href="#">S'inscrire</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Contactez-nous pour plus d'informations sur nos cours :</p>
+        <form action="send_message.php" method="POST">
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <input type="submit" value="Envoyer">
+        </form>
+        <p>Ou contactez-nous via WhatsApp : <a href="https://wa.me/82425397">WhatsApp</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BEMA Startup. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
